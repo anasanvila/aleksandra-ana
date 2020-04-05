@@ -3,7 +3,7 @@ import MenuItem from './menuItem';
 import home from '../images/home.png';
 import edu from '../images/education.png';
 import projects from '../images/projects.png';
-import {MenuWrapper, Home, Edu} from './menuStyle.js';
+import {MenuWrapper, Home, Edu} from '../style/menuStyle.js';
 
 class Menu extends Component {
     constructor() {

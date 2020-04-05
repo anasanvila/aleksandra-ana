@@ -1,8 +1,8 @@
 import React from 'react';
-import {Wrapp, H3, H5} from './mainContentStyle.js';
+import {Wrapp, H3, H5} from '../style/mainContentStyle.js';
 
 import Company from './company'
-import {json} from './projectData'
+import {json} from '../data/projectData'
 
 function MainContent (){
 

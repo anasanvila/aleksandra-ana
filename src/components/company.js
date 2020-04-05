@@ -1,5 +1,5 @@
 import React from 'react';
-import {H3, H5} from './mainContentStyle.js';
+import {H3, H5} from '../style/mainContentStyle.js';
 import Project from './project';
 import {Timeline} from 'vertical-timeline-component-react';
 

@@ -1,12 +1,12 @@
 import React from 'react';
-import {Img, ImgWrapper,  VideoWrapper, LinkCon, Line} from './mainContentStyle.js';
+import {Img, ImgWrapper,  VideoWrapper, LinkCon, Line} from '../style/mainContentStyle.js';
 import {
     Content,
     ContentYear,
     ContentBody,
     Description
   } from 'vertical-timeline-component-react';
-  import './video-react.css'
+  import '../style/video-react.css'
   import { Player } from 'video-react';
 
 const arr = (el, index, video, projectName, height, width)=>{

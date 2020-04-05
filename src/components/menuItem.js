@@ -1,6 +1,6 @@
 import React
  from 'react';
-import {MenuItemWrapper, H4} from  './menuItemStyle.js';
+import {MenuItemWrapper, H4} from  '../style/menuItemStyle.js';
 
 function MenuItem(props) {
     return (

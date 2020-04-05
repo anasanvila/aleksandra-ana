@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
 import styled from 'styled-components';
 import picture from '../images/ana2.png';
-import MainContent from './mainContent';
-import Menu from './menu';
-import './video-react.css'
-import {Header, BackgroundSVGImage, Image, TextWrapper, H1, H5} from './mainStyle.js';
+import MainContent from '../components/mainContent';
+import Menu from '../components/menu';
+import '../style/video-react.css'
+import {Header, BackgroundSVGImage, Image, TextWrapper, H1, H5} from '../style/mainStyle.js';
 
 
 class Main extends Component {
