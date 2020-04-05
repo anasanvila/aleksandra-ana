@@ -1,0 +1,54 @@
+import React from 'react';
+import {Img, ImgWrapper,  VideoWrapper, LinkCon, Line} from './mainContentStyle.js';
+import {
+    Content,
+    ContentYear,
+    ContentBody,
+    Description
+  } from 'vertical-timeline-component-react';
+  import './video-react.css'
+  import { Player } from 'video-react';
+
+const arr = (el, index, video, projectName, height, width)=>{
+    let ret;
+    console.log(width)
+    if (!video) { 
+        ret = <Img key={`${projectName}-${index}`}>
+                 <img src={el} height={height} key={`${projectName}${index}`} alt={`${projectName}${index}`}/>
+              </Img>
+    }
+        else {
+            ret = <VideoWrapper key={`${projectName}-${index}`} width={width}>
+                     <Player  playsInline  src={el} key={`${projectName}${index}`}/>
+                  </VideoWrapper>
+        }
+    return ret;
+}
+
+const showLink = (link) => {
+    if (link!=="") return (
+        <LinkCon>
+            <a href={link} target="_blank">LIVE</a>
+        </LinkCon>
+    )
+}
+
+const Project = ({projectName, year, title, text, imgArray, height, width, link, tools, video})=>{
+    return(
+        <Content>
+            <ContentYear year={year} />
+            <ContentBody title={title}>
+                <Description text={text} />
+                 <ImgWrapper>
+                    {imgArray.map((el, index)=>
+                        arr(el, index, video, projectName, height, width))}
+                </ImgWrapper>
+                {showLink(link)}
+                <h5><i>Tools used :</i>{tools}</h5>                                  
+                <Line/>         
+            </ContentBody>
+        </Content>
+    );
+}
+
+export default Project;
