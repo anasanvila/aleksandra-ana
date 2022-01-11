@@ -8,11 +8,11 @@
     "react-icons": "^3.9.0",
     "react-image-gallery": "^0.8.18",
     "react-router-dom": "^5.1.2",
-    "react-scripts": "^3.4.1",
+    "react-scripts": "^1.1.5",
     "react-transition-group": "^4.3.0",
     "redux": "^4.0.5",
     "styled-components": "^4.0.0",
-    "vertical-timeline-component-react": "^1.2.1",
+    "vertical-timeline-component-react": "^2.1.2",
     "video-react": "^0.14.1"
   },
   "scripts": {

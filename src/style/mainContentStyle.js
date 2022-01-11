@@ -27,7 +27,7 @@ export const Img = styled.div`
 export const ImgWrapper = styled.div`
     margin-top:20px;
     display:flex;
-    flex-wrap: wrap
+    flex-wrap: wrap;
 `
 export const Line=styled.div`
     border-bottom: 1px dashed #ccc;

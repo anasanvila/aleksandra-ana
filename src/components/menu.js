@@ -1,18 +1,11 @@
-import React, {Component} from 'react';
+import React from 'react';
 import MenuItem from './menuItem';
 import home from '../images/home.png';
 import edu from '../images/education.png';
 import projects from '../images/projects.png';
 import {MenuWrapper, Home, Edu} from '../style/menuStyle.js';
 
-class Menu extends Component {
-    constructor() {
-        super();
-        this.state = { 
-        };
-    }
-
-  render(){
+function Menu () {
     return (
     <MenuWrapper>        
        <MenuItem name="info">
@@ -26,7 +19,6 @@ class Menu extends Component {
        </MenuItem>
     </MenuWrapper>
     );
-  }
 }
 
 export default Menu;

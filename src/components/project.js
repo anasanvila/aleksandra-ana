@@ -33,18 +33,19 @@ const showLink = (link) => {
     )
 }
 
-const Project = ({projectName, year, title, text, imgArray, height, width, link, tools, video})=>{
+const Project = ({projectName, year, title, text, live, imgArray, height, width, link, tools, video})=>{
     return(
         <Content>
             <ContentYear year={year} />
             <ContentBody title={title}>
                 <Description text={text} />
+                {live&&<h5>{live.map((website)=><a href={website} target="_blank">{website}<br/></a>)}</h5>}
                  <ImgWrapper>
                     {imgArray.map((el, index)=>
                         arr(el, index, video, projectName, height, width))}
                 </ImgWrapper>
                 {showLink(link)}
-                <h5><i>Tools used :</i>{tools}</h5>                                  
+                <h5><i>Tools used : </i>{tools}</h5>                                  
                 <Line/>         
             </ContentBody>
         </Content>
