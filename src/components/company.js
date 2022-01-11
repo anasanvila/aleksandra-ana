@@ -10,20 +10,20 @@ function Company({title, period, description, companyProjects}){
             <H5>{period}</H5>
              {/* <H5><i>{description}</i> </H5> */}
             {companyProjects.map((project,index)=>(
-            <Project 
-                  key={`${project.projectName}--${index}`}
-                  projectName={project.projectName}
-                  year={project.year} 
-                  title={project.title}
-                  text={project.text}
-                  live={project.live}
-                  imgArray={project.imgArray}
-                  height={project.height}
-                  width={project.width}
-                  link={project.link}
-                  tools={project.tools}
-                  video={project.video}
-              />))}
+                <Project 
+                    key={`${project.projectName}--${index}`}
+                    projectName={project.projectName}
+                    year={project.year} 
+                    title={project.title}
+                    text={project.text}
+                    live={project.live}
+                    imgArray={project.imgArray}
+                    height={project.height}
+                    width={project.width}
+                    link={project.link}
+                    tools={project.tools}
+                    video={project.video}
+                />))}
         </Timeline>
     );
 }

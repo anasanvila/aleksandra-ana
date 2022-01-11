@@ -13,7 +13,7 @@
     "redux": "^4.0.5",
     "styled-components": "^4.0.0",
     "vertical-timeline-component-react": "^2.1.2",
-    "video-react": "^0.14.1"
+    "video-react": "^0.14.1"    
   },
   "scripts": {
     "start": "react-scripts start",
@@ -24,16 +24,8 @@
   "eslintConfig": {
     "extends": "react-app"
   },
-  "browserslist": {
-    "production": [
+  "browserslist":  [
       ">0.2%",
-      "not dead",
       "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
     ]
   }
-}
