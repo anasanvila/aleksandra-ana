@@ -3,5 +3,23 @@
 }
 
 .year-component {
-  width:0;
+  width:0!important;
+}
+
+.app {
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none!important;
+}
+
+body {
+  overflow-x:hidden;
+  width:100vw;
+}
+
+article > p {
+  color:#4b7097!important;
+  font-size:50px;
 }

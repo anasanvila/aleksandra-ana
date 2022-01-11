@@ -1,10 +1,10 @@
 import React, {useState, useEffect} from 'react';
 import styled from 'styled-components';
 import picture from '../images/ana2.png';
-import MainContent from '../components/mainContent';
+import Router from './router';
 import Menu from '../components/menu';
 import '../style/video-react.css'
-import {Header, BackgroundSVGImage, Image, TextWrapper, H1, H5} from '../style/mainStyle.js';
+import {Header, BackgroundSVGImage, Image, TextWrapper, MainWrapper, H1, H5} from '../style/mainStyle.js';
 
 
 function Main () {
@@ -35,9 +35,13 @@ function Main () {
             <TextWrapper>
                 <H1>Aleksandra Ana Đorđević</H1>
                 <H5>FRONTEND JAVASCRIPT DEVELOPER</H5>
-            </TextWrapper>            
-            <MainContent width={width}/>
+            </TextWrapper> 
         </Header>
+        
+        <MainWrapper>
+            <Router/>
+        </MainWrapper>
+       
         <BackgroundSVGImage>            
             <svg width={width} height={height} fill="#f2f2f2" >
                 <polygon points={string} />      

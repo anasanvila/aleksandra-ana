@@ -6,10 +6,3 @@ export const MenuWrapper = styled.div`
     flex-direction:row;
     justify-content:space-around;
 `
-
-export const Home = styled.div`
-    margin-top:0px;
-`
-export const Edu = styled.div`
-    margin-top:1px;
-`
