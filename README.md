@@ -1,2 +1,2 @@
 my portfolio live:
-http://www.aleksandra-djordjevic.in.rs
+https://www.aleksandra-djordjevic.in.rs
