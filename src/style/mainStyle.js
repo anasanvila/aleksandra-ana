@@ -27,6 +27,11 @@ export const H1=styled.h1`
     font-size:80px;
     font-family: 'Times New Roman', serif;
 
+    @media (max-width:600px){
+        font-size:41px;
+        display:block;
+    }
+
 `
 export const H5=styled.h5`
     font-size:20px;
@@ -36,4 +41,23 @@ export const H5=styled.h5`
    
     letter-spacing:4px;
     font-weight:600px;
+
+    @media (max-width:600px){
+        display:block;
+        margin-top:20px;
+    }
+`
+export const MainWrapper = styled.div`
+    @media (max-width:600px){
+        width:90%;
+        margin:0 auto;
+    }
+    @media (min-width:601px) and (max-width:1200px){
+        width:90%;
+        margin:0 auto
+    }
+    @media (min-width:1200px){}
+        width:85%;
+        margin:0 auto;
+    }
 `

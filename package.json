@@ -3,17 +3,19 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
     "react-icons": "^3.9.0",
     "react-image-gallery": "^0.8.18",
-    "react-router-dom": "^5.1.2",
+    "react-router": "^6.3.0",
+    "react-router-dom": "^6.3.0",
     "react-scripts": "^1.1.5",
+    "react-spring-lightbox": "^1.6.0",
     "react-transition-group": "^4.3.0",
     "redux": "^4.0.5",
-    "styled-components": "^4.0.0",
-    "vertical-timeline-component-react": "^2.1.2",
-    "video-react": "^0.14.1"    
+    "styled-components": "^5.3.5",
+    "vertical-timeline-component-react": "3.0.3",
+    "video-react": "^0.15.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -24,8 +26,8 @@
   "eslintConfig": {
     "extends": "react-app"
   },
-  "browserslist":  [
-      ">0.2%",
-      "not op_mini all"
-    ]
-  }
+  "browserslist": [
+    ">0.2%",
+    "not op_mini all"
+  ]
+}
