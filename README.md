@@ -1,4 +1,2 @@
-WORK IN PROGRESS
-
-MOJ PORTFOLIO KOJI SE NALAZI NA STRANICI:
+my portfolio live:
 http://www.aleksandra-djordjevic.in.rs
