@@ -468,6 +468,16 @@ function get_Edu_Recommendations_ImgArr(){
     return valuesToArray(edu_recommendation_images)
 }
 
+function get_Edu_Hobies_ImgArr(){    
+    const edu_hobies_images = importAll(require.context('../images/education/hobies', false, /\.(png|jpe?g|svg)$/));
+    function importAll(r) {
+        let edu_hobies_images = {};
+        r.keys().forEach((item) => { edu_hobies_images[item.replace('./', '')] = r(item); });
+        return edu_hobies_images
+    } 
+    return valuesToArray(edu_hobies_images)
+}
+
 const edu_ImgArr = get_Edu_ImgArr()
 const edu_academic_ImgArr = get_Edu_Academic_ImgArr()
 const edu_award_ImgArr = get_Edu_Award_ImgArr()
@@ -476,6 +486,7 @@ const edu_courses_ImgArr = get_Edu_Courses_ImgArr()
 const edu_exibitions_ImgArr = get_Edu_Exibitions_ImgArr()
 const edu_certification_ImgArr = get_Edu_Certifications_ImgArr()
 const edu_recommendations_ImgArr = get_Edu_Recommendations_ImgArr()
+const edu_hobies_ImgArr = get_Edu_Hobies_ImgArr()
 
 
 export {
@@ -486,5 +497,6 @@ export {
     edu_courses_ImgArr,
     edu_exibitions_ImgArr,
     edu_certification_ImgArr,
-    edu_recommendations_ImgArr
+    edu_recommendations_ImgArr,
+    edu_hobies_ImgArr,
 }

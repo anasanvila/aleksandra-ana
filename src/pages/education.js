@@ -2,7 +2,8 @@ import React from 'react'
 import {eduJson} from '../data/eduPageData'
 import {EducationBox, EduCategory, Pictures, EduImg} from '../style/eduPageSyle'
 import { edu_ImgArr } from '../data/imagesLoader'
-
+import Gallery from '../components/gallery'
+import { MainPictureWrapper } from '../style/projectsStyle'
 
 const Course = ({title, subtitle, children}) => (
     <div>
@@ -50,14 +51,18 @@ const Institution = ({title,projects}) => {
 
 const Education = () => {
     return (
-        <EducationBox>
-            
+        <EducationBox>            
              {categoryArray.map(category=>{
                 console.log("category = ", category)
                 return(
                 <div>
                     <EduCategory>{category.title}:</EduCategory>
-                    <Pictures>{category.imgArr.map((picture) => <EduImg><img src={picture}/></EduImg>)}</Pictures>
+                    <Pictures>
+                        <Gallery projectName={category.title} imgArray={category.imgArr} height="200px" width="250px" />
+                    </Pictures>
+                    <MainPictureWrapper>
+                         <img src={category.imgArr[1]}/>
+                    </MainPictureWrapper>
                     <Institution
                         title={category.title}
                         projects={createInstitutionArray(category.arr)}

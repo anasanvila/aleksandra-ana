@@ -7,13 +7,8 @@ import {
     Section,
     Description,
    } from 'vertical-timeline-component-react'
-import Lightbox from 'react-spring-lightbox';
-import '../style/video-react.css'
+import Gallery from './gallery'
 import { Player } from 'video-react';
-
-
-
-
 
 export const showLink = (link) => {
     if (link!=="") return (
@@ -23,38 +18,8 @@ export const showLink = (link) => {
     )
 }
 
-const Project = ({projectName, year, title, text, live, type, imgArray, mainPhoto, height, width, link, tools, video}) => {
-
-    const [currentImageIndex, setCurrentIndex] = useState(0);
-    const [open, setOpen] = useState(false)
-
-    const images = imgArray.map( (img,index) => ({src:img, loading:'lazy', alt:`img-${index}`}) )
-
-    const gotoPrevious = () =>
-        currentImageIndex > 0 && setCurrentIndex(currentImageIndex - 1);
-
-    const gotoNext = () =>
-        currentImageIndex + 1 < images.length &&
-        setCurrentIndex(currentImageIndex + 1);
-    
-    const onClose = () => {
-            setOpen(false)
-    }
-
-    const gallery = (el, index, video, projectName, height, width)=>{
-        let picture;
-        if (!video) { 
-            picture = <Img key={`${projectName}-${index}`}  onClick={()=>setOpen(true)}  >
-                    <img src={el} height={height} key={`${projectName}${index}`} alt={`${projectName}${index}`}/>
-                  </Img>
-        }
-            else {
-                picture = <VideoWrapper key={`${projectName}-${index}`} width={width}>
-                         <Player  playsInline  src={el} key={`${projectName}${index}`}/>
-                      </VideoWrapper>
-            }
-        return picture;
-    }
+const Project = (props) => {
+    const {projectName, year, title, text, live, type, imgArray, mainPhoto, height, width, link, tools, video} = props;
 
     return (
     <Container>
@@ -63,19 +28,7 @@ const Project = ({projectName, year, title, text, live, type, imgArray, mainPhot
         <Section title={title}>
            <H4><Description text={type} /></H4>
             <Description text={text} />
-            <ImgWrapper>
-                {imgArray.map((el, index)=>
-                    gallery(el, index, video, projectName, height, width))} 
-                <Lightbox
-                    isOpen={open}
-                    onPrev={gotoPrevious}
-                    onClose={onClose}
-                    onNext={gotoNext}
-                    images={images}
-                    currentIndex={currentImageIndex}
-                    style={{ backgroundColor: 'rgba(40,40,40, 0.7)  ' }}
-                />
-            </ImgWrapper>
+            <Gallery {...props}/>
             <MainPictureWrapper>
             {video?<VideoWrapper key={`${projectName}`} width={width}>
                         <Player  playsInline  src={imgArray[0]} key={`${projectName}`}/>
@@ -83,7 +36,8 @@ const Project = ({projectName, year, title, text, live, type, imgArray, mainPhot
                     :<img src={mainPhoto} alt={projectName}/>}
             </MainPictureWrapper>
             {showLink(link)}
-            {live&&<h4 style={{marginTop:'30px'}}>You can find this project live: {live.map((website)=><a href={website} target="_blank"><span style={{color:'#4b7097'}}><b><u>here</u></b></span><br/></a>)}</h4>} 
+            {live&&<h4 style={{marginTop:'30px'}}>You can find this project live:
+                 {live.map((website)=><a href={website} target="_blank"><span style={{color:'#4b7097'}}><b><u>here</u></b></span><br/></a>)}</h4>} 
             <h5><i>Tools used : </i>{tools}</h5>                                  
             <Line/>         
         </Section>

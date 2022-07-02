@@ -6,7 +6,8 @@ import {
     edu_courses_ImgArr,
     edu_exibitions_ImgArr,
     edu_certification_ImgArr,
-    edu_recommendations_ImgArr
+    edu_recommendations_ImgArr,
+    edu_hobies_ImgArr,
 } from "./imagesLoader"
 
 export const FONtitle = `
@@ -90,7 +91,7 @@ export const INTsubtitle=`Theme:"Knowledge sharing"`
 export const INT=`
     Award winner, Project Leader, Designer and Presenter
 `
-export const RNtitle=`React Native, Indjija`
+export const RNtitle=`React Native, Startit - Indjija`
 export const RNsubtitle=`3 months course`
 export const RN=`React Native Course (3 months)`
 
@@ -98,11 +99,12 @@ export const RWtitle=`React Week, Belgrade`
 export const RWsubtitle=`Conferences with lectures and workshops`
 export const RW=`Modern React Development`
 
-export const ANtitle=`Startit, Nova Iskra, Impact Hub Belgrade`
+export const ANtitle=`Startit, Nova Iskra, ICT hub, Impact Hub Belgrade, Dom Omladine`
 export const ANsubtitle=``
 export const AN=`<b>Lectures:</b>
 Agile Development,
-Animation
+Animation,
+UX/UI design, Startups, Responsive web design
 `
 
 export const Utitle=`Udemy Courses`
@@ -121,15 +123,15 @@ export const S=`Licenced Senior Architect `
 
 export const Dtitle=`Vinca Institute`
 export const Dsubtitle=``
-export const D=`Certified Specialist: digital video and montage ( Adobe After Effects, Adobe Premiere`
+export const D=`Certified Specialist: digital video and montage ( Adobe After Effects, Adobe Premiere)`
 
 export const LEtitle=`Leskovac`
 export const LEsubtitle=`Exibition`
-export const LE=``
+export const LE=`2012, 2013`
 
 export const SKCtitle=`SKC, Belgrade`
 export const SKCsubtitle=`Exibition`
-export const SKC=``
+export const SKC=`2011, 2012, 2013`
 
 export const Rectitle=''
 export const Recsubtitle=''
@@ -182,11 +184,11 @@ export const eduJson = {
                 subtitile:RNsubtitle,
                 description:RN
             },
-            // online:{
-            //     title:Utitle,
-            //     subtitile:Usubtitle,
-            //     description:U
-            // }
+            nodeSchool:{
+                title:"Node School, Startit - Indjija",
+                subtitile:RNsubtitle,
+                description:"Learning Node.js"
+            },
         }
     },
     awards:{
@@ -204,49 +206,43 @@ export const eduJson = {
         title:'exibitions',
         imgArr:edu_exibitions_ImgArr,
         arr: {
-            gallery: {
-                    title:'',
+            centarZaKulturu: {
+                    title:"Cultural centre 'Vlada Divljan'",
                     subtitile:'',
-                    description:''
+                    description:'2014'
                 },
 
-            // leskovac: {
-            //     title:LEtitle,
-            //     subtitile:LEsubtitle,
-            //     description:LE
-            // },
-            // skc: {
-            //     title:SKCtitle,
-            //     subtitile:SKCsubtitle,
-            //     description:SKC
-            // },
+            leskovac: {
+                title:"Leskovac - Cultural Centre",
+                subtitile:LEsubtitle,
+                description:LE
+            },
+            skc: {
+                title:SKCtitle,
+                subtitile:SKCsubtitle,
+                description:SKC
+            },
         }
     },
     conferences: {
         title:'conferences / workshops / lectures',
         imgArr:edu_conferences_ImgArr,
         arr: {
-            conf:{
-                title:'',
-                subtitile:'',
-                description:''
-                
+            reactWeek : {
+                title:RWtitle,
+                subtitile:RWsubtitle,
+                description:RW
             },
-            // reactWeek : {
-            //     title:RWtitle,
-            //     subtitile:RWsubtitle,
-            //     description:RW
-            // },
-            // enter:{
-            //     title:Etitle,
-            //     subtitile:Esubtitle,
-            //     description:E
-            // },
-            // animation:{
-            //     title:ANtitle,
-            //     subtitile:ANsubtitle,
-            //     description:AN
-            // }
+            enter:{
+                title:Etitle,
+                subtitile:Esubtitle,
+                description:E
+            },
+            startit:{
+                title:ANtitle,
+                subtitile:ANsubtitle,
+                description:AN
+            },
         }
     },
     recommendations: {
@@ -268,6 +264,67 @@ export const eduJson = {
                 title:"",
                 subtitile:"",
                 description:""
+            },
+        },
+    },
+    hobies: {
+        title: 'other schools & hobies',
+        imgArr:edu_hobies_ImgArr,
+        arr: {
+            drawing:{
+                title:"Comic & Illustrations Drawing School",
+                subtitile:"",
+                description:"Student Cultural Centre - SKC (2011-2013)"
+            },
+            architecture1:{
+                title:"School of Architecture, University in Belgrade",
+                subtitile:"",
+                description:"Postgraduate Specialization Course 'Urban Renewal' - 2 years (2009-2011)"
+            },         
+            russian:{
+                title:"Russian Cultural Centre",
+                subtitile:"",
+                description:"Learning Russian Language (2011-2014)"
+            },
+            musicSchool2:{
+                title:"Music School 'Josif Marinkovic'",
+                subtitile:"",
+                description:"Singing / Vocal performance - 2 years (2007-2009)"
+            },
+            yoga:{
+                title:"Vidya Yoga - Dragan Loncar",
+                subtitile:"",
+                description:"Proffessional training for yoga instructor - 1 year (2008-2009)"
+            },
+            italian:{
+                title:"Scudit Belgrado",
+                subtitile:"",
+                description:"Learning Italian language (2008)"
+            },
+            architecture2:{
+                title:"Architectural Design Research and Education Studio 'ARD'",
+                subtitile:"",
+                description:"Drawing course, History of Architecture (2002-2003)"
+            },
+            musicSchool1:{
+                title:"Music School 'Petar Konjovic'",
+                subtitile:"",
+                description:"Learning playing piano - 6 years (1993-1999)"
+            },
+            rts:{
+                title:"RTS",
+                subtitile:"",
+                description:"One of the kids-speaker on tv show for children 'Deciji dnevnik' (1993-1996)"
+            },
+            A2:{
+                title:"School for Making Animated Cartoons - A2",
+                subtitile:"",
+                description:"Hand-drawn animations, Process Movie Making (1993-1995)"
+            },
+            hobies:{
+                title:"Hobies",
+                subtitile:"",
+                description:"reading books, riding bicycle & roler skates, creating tasty cakes with interesting design"
             },
         },
     },

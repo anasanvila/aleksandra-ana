@@ -30,6 +30,10 @@ export const Pictures = styled.div`
     overflow-y:hidden;
     width:100%;
     display:flex;
+   
+    @media (max-width:1200px){
+        display:none;
+    }
 `
 export const EduImg = styled.div`
     height:200px;

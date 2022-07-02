@@ -232,7 +232,7 @@ import {
         },
     },
     freelance : {
-        title:"Freelance",
+        title:"Freelance & Other Projects",
         period:"",
         //"(2017)",
         description:"",
@@ -340,7 +340,7 @@ import {
                 mainPhoto:mini,
                 height:"70px",
                 width:"",
-                link:"https://aleksandra-ana.in.rs/falijedan",
+                link:"https://www.aleksandra-ana.in.rs/falijedan",
                 tools:" HTML5, CSS3, Vanilla JS, Bootstrap, Inkscape, Git, Linux OS",
                 video:false,
                 type:'design  &  development'
