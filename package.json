@@ -9,7 +9,7 @@
     "react-image-gallery": "^0.8.18",
     "react-router": "^6.3.0",
     "react-router-dom": "^6.3.0",
-    "react-scripts": "^1.1.5",
+    "react-scripts": "^5.0.1",
     "react-spring-lightbox": "^1.6.0",
     "react-transition-group": "^4.3.0",
     "redux": "^4.0.5",
